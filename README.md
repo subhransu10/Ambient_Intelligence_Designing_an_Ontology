@@ -21,4 +21,7 @@ The Ontology describes the Ambient Intelligence application.
 
 -  Individual Assertions and  Property Assertions added in the __ABox__
 
--  SWRL rules 
+-  SWRL rules
+
+
+![](https://github.com/subhransu10/Ambient_Intelligence_Designing_an_Ontology/blob/main/Ontograph.png)
