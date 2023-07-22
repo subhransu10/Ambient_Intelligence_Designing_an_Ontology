@@ -1,0 +1,839 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#"
+     xml:base="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#NonProfessional -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#NonProfessional">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Professional -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Professional">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasAccelerometer -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasAccelerometer">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isAccelerometerOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasGPS -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasGPS">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isGPSOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasUltrasonic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasUltrasonic">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isUltrasonicOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isAccelerometerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isAccelerometerOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isSensorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isGPSOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isGPSOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isSensorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isPersonalVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isPersonalVehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isVehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isPublicVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isPublicVehicle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isVehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isSensorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isSensorOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isUltrasonicOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isUltrasonicOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isSensorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isVehicle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#isVehicle"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#High -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#High">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSpeed"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Low -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Low">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSpeed"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Medium -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Medium">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSpeed"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasAllSensors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasAllSensors">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasEmergencyContact -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasEmergencyContact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasGoodDriver -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasGoodDriver">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSpeed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSpeed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Acceleration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Bus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Bus">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Public_vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Car">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#NonPro"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Personal_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_Contact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_Contact">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+        <rdfs:comment>The emergency contacts include the people related to the victim.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_Driver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver"/>
+        <rdfs:comment>The driver of an emergency vehicle (eg: Fire Vehicle, Ambulance,Police,etc)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Fire_Brigade -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Fire_Brigade">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Motorcycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Motorcycle">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#NonPro"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Personal_Vehicle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#NonPro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#NonPro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle_Driver"/>
+        <rdfs:comment>He is not a professional driver</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Notification">
+        <rdfs:comment>Notification will be sent to the nearby hospital,police,fire station (depending on the situation) and the people related to the victim(s).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Passenger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Passenger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+        <rdfs:comment>Passengers inside the vehicle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Personal_Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Personal_Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle_Driver"/>
+        <rdfs:comment>He is authorized to drive public transport vehicles.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Public_vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Public_vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Taxi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Taxi">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Pro"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Public_vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Temperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ultrasonic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ultrasonic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle_Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle_Driver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver"/>
+        <rdfs:comment>The driver of the Vehicle that met with the accident</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vibration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vibration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Bus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Car"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Motorcycle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Taxi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Bus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Car"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Motorcycle"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Taxi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#EmergencyContact1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#EmergencyContact1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#EmergencyContact2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#EmergencyContact2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#FireStationDriver1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#FireStationDriver1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_Driver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#FireStationDriver2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#FireStationDriver2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Emergency_Driver"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Victim1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Victim1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Victim2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Victim2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Bus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Fire_Brigade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Ambulance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Fire_Brigade"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Police"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Taxi"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Notification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#v">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Action needs to be taken as quickly as possible</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CriticalCondition</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Vehicle"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#v"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasSensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#v"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Driver1"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#v"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">After confirmation of accident we call the concerned authorities;check the threshold value of accelerometer to confirm the accident</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CallEmergency</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Passenger"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#hasDriver"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#d"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/hp/ontologies/2022/11/untitled-ontology-12#s"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.2</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
