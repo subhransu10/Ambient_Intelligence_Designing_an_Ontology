@@ -6,6 +6,7 @@ The application focuses on
 -  people and how they can interact with the environment and/or take benefit from it
 -  sensors.
 
+[APP description](https://github.com/subhransu10/Ambient_Intelligence_Designing_an_Ontology/blob/main/AMI_APP.pdf)
 
 ## ONTOLOGY DESIGN
 
